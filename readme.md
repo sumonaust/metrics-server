@@ -18,7 +18,7 @@ Exploring Resource Management:
 
 # Exceeding Available Memory:
 A pod requesting more memory than is available will be killed due to an OOM (Out of Memory) error.
----
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -35,8 +35,8 @@ spec:
         memory: "100Mi"
     command: ["stress"]
     args: ["--vm", "1", "--vm-bytes", "250M", "--vm-hang", "1"]
----
----
+
+
 # Create pod with below command
 
 apiVersion: v1
@@ -55,4 +55,4 @@ spec:
         memory: "200Mi"
     command: ["stress"]
     args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]
----    
+
